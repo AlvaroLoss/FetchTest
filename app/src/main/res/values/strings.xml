@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">FetchTest</string>
+    <string name="hiring_item_list_id">listId: </string>
+    <string name="hiring_item_id">id: </string>
+    <string name="hiring_item_name">name: </string>
+</resources>
