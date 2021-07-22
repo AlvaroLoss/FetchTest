@@ -9,6 +9,7 @@ import kotlinx.coroutines.flow.collect
 class MainViewModel(
     private val apiServiceProvider: ApiServiceProvider
 ): ViewModel(), IMainViewModel {
-    override val hiringItemFlow: StateFlow<List<HiringItem>>
-        get() = apiServiceProvider.getHiringItemsInOrder()
+    override val hiringItemFlow: StateFlow<List<HiringItem>> by lazy {
+        apiServiceProvider.getHiringItemsInOrder()
+    }
 }
